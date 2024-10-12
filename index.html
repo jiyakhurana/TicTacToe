@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tic Tac Toe</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <!-- Start Panel -->
+            <div id="startPanel" class="panel active">
+                <h1>Welcome to Tic Tac Toe</h1>
+                <button id="startButton" class="btn">Start</button>
+                <button id="creditsButton" class="btn">Credits</button>
+                <button id="exitButton" class="btn">Exit</button>
+            </div>
+    
+            <!-- Player Selection Panel -->
+            <div id="playerSelectionPanel" class="panel">
+                <h1>Select Number of Players</h1>
+                <button id="onePlayerButton" class="btn">1 Player</button>
+                <button id="twoPlayerButton" class="btn">2 Players</button>
+            </div>
+    
+            <!-- Name Entry Panel -->
+            <div id="nameEntryPanel" class="panel">
+                <h1>Enter Player Names</h1>
+                <div id="player1NameContainer">
+                    <label for="player1Name">Player 1 Name:</label>
+                    <input type="text" id="player1Name" class="input">
+                </div>
+                <div id="player2NameContainer">
+                    <label for="player2Name">Player 2 Name:</label>
+                    <input type="text" id="player2Name" class="input">
+                </div>
+                <button id="startGameButton" class="btn">Start Game</button>
+            </div>
+    
+            <!-- Game Panel -->
+            <div id="gamePanel" class="panel">
+                <h1 id="gameStatus">Tic Tac Toe</h1>
+                <div class="board">
+                    <div class="cell" data-cell></div>
+                    <div class="cell" data-cell></div>
+                    <div class="cell" data-cell></div>
+                    <div class="cell" data-cell></div>
+                    <div class="cell" data-cell></div>
+                    <div class="cell" data-cell></div>
+                    <div class="cell" data-cell></div>
+                    <div class="cell" data-cell></div>
+                    <div class="cell" data-cell></div>
+                </div>
+                <div id="winLossRatio"></div>
+                <button id="restartButton" class="btn">Restart Game</button>
+                <button id="quitButton" class="btn">Quit Game</button>
+                <button id="mainMenuButton" class="btn">Main Menu</button>
+            </div>
+        </div>
+        <script src="min.js"></script>
+    </body>
+</html>
